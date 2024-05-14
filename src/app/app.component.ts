@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -9,5 +9,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'sys_planillas';
+  title = 'CONTASYNC';
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+
+
 }
